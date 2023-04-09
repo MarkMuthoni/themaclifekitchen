@@ -1,0 +1,5 @@
+flask
+wtforms
+flask_wtf
+twilio
+email_validator
