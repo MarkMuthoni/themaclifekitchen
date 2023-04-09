@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+    background-color: #A24857;
+}
+</style>
+<h2 style="color: red; text-decoration: underline;">Drinks</h2>
+<div class="container" style="height: 80%;">
+    <table>
+      <caption>Drinks Menu</caption>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Drink</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Tea</td>
+          <td>Chai tea</td>
+          <td>A blend of black tea, spices, and milk</td>
+          <td>Ksh 150</td>
+          <td><img src="tea1.jpg" alt="Chai tea"></td>
+        </tr>
+        <tr>
+          <td>Green tea</td>
+          <td>Light and refreshing green tea</td>
+          <td>Ksh 120</td>
+          <td><img src="tea2.jpg" alt="Green tea"></td>
+        </tr>
+        <tr>
+          <td>Masala tea</td>
+          <td>Indian spiced tea with milk</td>
+          <td>Ksh 160</td>
+          <td><img src="tea3.jpg" alt="Masala tea"></td>
+        </tr>
+        <tr>
+          <td rowspan="3">Coffee</td>
+          <td>Americano</td>
+          <td>Espresso with hot water</td>
+          <td>Ksh 180</td>
+          <td><img src="coffee1.jpg" alt="Americano"></td>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+          <td>Espresso with steamed milk and foam</td>
+          <td>Ksh 200</td>
+          <td><img src="coffee2.jpg" alt="Cappuccino"></td>
+        </tr>
+        <tr>
+          <td>Latte</td>
+          <td>Espresso with steamed milk</td>
+          <td>Ksh 220</td>
+          <td><img src="coffee3.jpg" alt="Latte"></td>
+        </tr>
+        <tr>
+          <td rowspan="3">Juice</td>
+          <td>Orange juice</td>
+          <td>Freshly squeezed orange juice</td>
+          <td>Ksh 180</td>
+          <td><img src="juice1.jpg" alt="Orange juice"></td>
+        </tr>
+        <tr>
+          <td>Carrot juice</td>
+          <td>Freshly juiced carrots with a touch of ginger</td>
+          <td>Ksh 200</td>
+          <td><img src="juice2.jpg" alt="Carrot juice"></td>
+        </tr>
+        <tr>
+          <td>Watermelon juice</td>
+          <td>Cool and refreshing watermelon juice</td>
+          <td>Ksh 220</td>
+          <td><img src="juice3.jpg" alt="Watermelon juice"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+    background-color: #A24857;
+}
+</style>
+<h2 style="color: red; text-decoration: underline;">Desserts</h2>
+<div class="container" style="height: 80%;">
+    <table>
+      <caption>Dessert Menu</caption>
+      <thead>
+        <tr>
+          <th>Dessert</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chocolate lava cake</td>
+          <td>Warm chocolate cake with a gooey, molten center</td>
+          <td>Ksh 350</td>
+          <td><img src="dessert1.jpg" alt="Chocolate lava cake"></td>
+        </tr>
+        <tr>
+          <td>Tiramisu</td>
+          <td>Classic Italian dessert with layers of espresso-soaked ladyfingers and creamy mascarpone filling</td>
+          <td>Ksh 400</td>
+          <td><img src="dessert2.jpg" alt="Tiramisu"></td>
+        </tr>
+        <tr>
+          <td>Strawberry shortcake</td>
+          <td>Buttery shortcake layered with fresh strawberries and whipped cream</td>
+          <td>Ksh 300</td>
+          <td><img src="dessert3.jpg" alt="Strawberry shortcake"></td>
+        </tr>
+        <tr>
+          <td>Blueberry cheesecake</td>
+          <td>Creamy cheesecake swirled with juicy blueberries and a graham cracker crust</td>
+          <td>Ksh 350</td>
+          <td><img src="dessert4.jpg" alt="Blueberry cheesecake"></td>
+        </tr>
+        <tr>
+          <td>Chocolate chip cookie skillet</td>
+          <td>Warm chocolate chip cookie baked in a cast iron skillet and topped with ice cream</td>
+          <td>Ksh 350</td>
+          <td><img src="dessert5.jpg" alt="Chocolate chip cookie skillet"></td>
+        </tr>
+        <tr>
+          <td>Crème brûlée</td>
+          <td>Classic French dessert with a creamy vanilla custard and a caramelized sugar topping</td>
+          <td>Ksh 400</td>
+          <td><img src="dessert6.jpg" alt="Crème brûlée"></td>
+        </tr>
+        <tr>
+          <td>Banana bread pudding</td>
+          <td>Banana bread baked with a custard base and topped with caramel sauce</td>
+          <td>Ksh 300</td>
+          <td><img src="dessert7.jpg" alt="Banana bread pudding"></td>
+        </tr>
+        <tr>
+          <td>Apple crisp</td>
+          <td>Sliced apples baked with a buttery oat crumb topping and served with vanilla ice cream</td>
+          <td>Ksh 350</td>
+          <td><img src="dessert8.jpg" alt="Apple crisp"></td>
+        </tr>
+        <tr>
+          <td>Red velvet cake</td>
+          <td>Moist and fluffy cake with a rich cream cheese frosting</td>
+          <td>Ksh 400</td>
+          <td><img src="dessert9.jpg" alt="Red velvet cake"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+{% endblock %}

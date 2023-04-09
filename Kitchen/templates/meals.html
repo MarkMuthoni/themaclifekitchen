@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+  table, th, td {
+  border: 1px solid black;
+}
+
+th {
+    background-color: #A24857;
+}
+</style>
+<h2 style="color: Red; text-decoration: underline;">Meals</h2>
+<br>
+<div class="container" style="height: 80%;">
+  <table>
+    <caption>The Maclife Kitchen Menu</caption>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Meal</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3">African Dishes</td>
+        <td>Jollof Rice with Chicken</td>
+        <td>West African rice dish cooked with tomato sauce, spices and chicken</td>
+        <td>Ksh 450</td>
+        <td><img src="jollof-rice.jpg" alt="Jollof Rice with Chicken"></td>
+      </tr>
+      <tr>
+        <td>Maandazi and Chai</td>
+        <td>Traditional East African sweet fried doughnuts served with sweet tea</td>
+        <td>Ksh 200</td>
+        <td><img src="mandazi-chai.jpg" alt="Maandazi and Chai"></td>
+      </tr>
+      <tr>
+        <td>Pounded Yam and Egusi Soup</td>
+        <td>West African soup made with melon seeds and served with pounded yam</td>
+        <td>Ksh 500</td>
+        <td><img src="pounded-yam-egusi.jpg" alt="Pounded Yam and Egusi Soup"></td>
+      </tr>
+      <tr>
+        <td rowspan="3">Native Kenyan Dishes</td>
+        <td>Ugali and Sukuma Wiki</td>
+        <td>Kenyan staple food made with maize flour served with a side of sautéed kale</td>
+        <td>Ksh 300</td>
+        <td><img src="ugali-sukuma-wiki.jpg" alt="Ugali and Sukuma Wiki"></td>
+      </tr>
+      <tr>
+        <td>Kienyeji Chicken Stew</td>
+        <td>Slow-cooked indigenous Kenyan chicken served in a tomato-based stew</td>
+        <td>Ksh 400</td>
+        <td><img src="kienyeji-chicken-stew.jpg" alt="Kienyeji Chicken Stew"></td>
+      </tr>
+      <tr>
+        <td>Mukimo and Nyama Choma</td>
+        <td>Traditional Kikuyu dish made of mashed potatoes, maize and beans served with grilled meat</td>
+        <td>Ksh 550</td>
+        <td><img src="mukimo-nyama-choma.jpg" alt="Mukimo and Nyama Choma"></td>
+      </tr>
+      <tr>
+        <td rowspan="4">Local Kenyan Dishes</td>
+        <td>Chapati and Beef Stew</td>
+        <td>Flaky layered flatbread served with a rich beef stew</td>
+        <td>Ksh 450</td>
+        <td><img src="chapati-beef-stew.jpg" alt="Chapati and Beef Stew"></td>
+      </tr>
+      <tr>
+        <td>Kenyan Pilau</td>
+        <td>Spiced rice dish made with whole spices, meat, and vegetables</td>
+        <td>Ksh 500</td>
+        <td><img src="kenyan-pilau.jpg" alt="Kenyan Pilau"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
