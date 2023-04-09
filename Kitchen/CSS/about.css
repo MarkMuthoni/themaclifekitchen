@@ -1,0 +1,54 @@
+.about{
+    background-image: url('Images/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px;
+}
+.about h2{
+    position: absolute;
+    color: #e2e7ba;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    font-size: 300%;
+}
+
+.story{
+    background-color: #D7CAD6;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.story h3{
+    font-size: 200%;
+    padding-bottom: 4%;
+}
+.values{
+    background-color: #FFFDD0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.cuisine{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.pride{
+    background-color: #f6e4d9;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 40px;
+}
+.pride h3{
+    font-size: 200%;
+    padding-bottom: 4%;
+}
