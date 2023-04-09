@@ -1,0 +1,139 @@
+{% extends 'layout.html' %}
+{% block content %}
+<link rel="stylesheet" href="static/CSS/booking.css">
+    <div class="booking-header" >
+        <h1 class="text">Reservation &amp; booking</h1>
+    </div>
+    <div class="container body">
+        <div class="row">
+            <div class="col-md-6 container">
+                <h1 style="color: brown;">The Maclife Kitchen</h1>
+                <p style="text-align: left; margin-left: 5%;"><strong>Physical Address: <br></strong>JJ Gardens, off magunas drive, Kahawa wendani, Nairobi, Kenya<br>
+                <strong>Tel:</strong> +254-7651-0963<br>
+                <strong>Email:</strong> <a href="#">themaclifekitchen@mail.com</a><br>
+                <strong>Opening Hours:</strong> 10am - 11pm<br>
+                <strong>Open Days:</strong> Tuesday-Sunday</p>
+                <h3 style="color: brown;">Corporate Retreats</h3>
+                <p>Our restaurant is a cut above the rest when it comes to providing an exceptional
+                    dining experience with its one-of-a-kind concept, elegant design and stunning decor.
+                    We take pride in offering a range of spaces for corporate events,
+                    each designed to cater to the specific needs of our guests.
+                    Our venue is equipped with various areas that can accommodate different group sizes,
+                    ensuring that each event is intimate and memorable. Whether you are hosting a business dinner,
+                    a cocktail reception or a team-building event,
+                    we guarantee that our team will make it an unforgettable experience.</p>
+                <p>As part of our commitment to providing a truly unique African dining experience,
+                    we offer two exquisite menus that are perfect for corporate or group events.
+                    Our "Kenyan Culinary Adventure" menu takes diners on a gastronomical journey through
+                    the rich flavors of Kenya's diverse regions. Alternatively, our "African Tasting Tour"
+                    menu allows guests to savor a variety of delicacies from across the continent,
+                    expertly crafted by our talented chefs. All menus are available on our
+                    <a href="{{ url_for('meals') }}">Menu page</a> section.</p>
+
+            </div>
+            <div class="col-md-6">
+                <form action="" class="form" method="POST">
+                    {{ form.csrf_token }}
+                    <fieldset class="form-group">
+                        <legend style="color: red; text-decoration: underline;">Book A Table</legend>
+                        <div class="form-group">
+                            {{ form.name.label(class="form-control-label") }}
+                            {% if form.name.errors %}
+                                {{ form.name(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.name.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.name(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.email.label(class="form-control-label") }}
+                            {% if form.email.errors %}
+                                {{ form.email(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.email(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.mobile.label(class="form-control-label") }}
+                            {% if form.mobile.errors %}
+                                {{ form.mobile(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.mobile(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.people.label(class="form-control-label") }}
+                            {% if form.people.errors %}
+                                {{ form.people(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.people(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.date.label(class="form-control-label") }}
+                            {% if form.date.errors %}
+                                {{ form.date(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.date(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.time.label(class="form-control-label") }}
+                            {% if form.time.errors %}
+                                {{ form.time(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.time(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.requests.label(class="form-control-label") }}
+                            {% if form.requests.errors %}
+                                {{ form.requests(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.requests(class="form-control form-control-md") }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    <br>
+                    <div class="text-group" style="text-align: center;">
+                        {{ form.submit(class="btn btn-outline-success") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
