@@ -1,0 +1,19 @@
+.contact-header{
+    background-image: url('Images/contact_us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    position: relative;
+    width: 100%;
+}
+.contact-header .text{
+    position: absolute;
+    font-size: 250%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+.body{
+    padding-bottom: 20%;
+}

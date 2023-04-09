@@ -1,0 +1,97 @@
+.Home{
+        background-image: url('Images/Home.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55%;
+        filter: brightness(0.9);
+    }
+    .Home .hed{
+        display: flex;
+        color: #FFFF00;
+        position: relative;
+        font-size: 350%;
+        top: 10%;
+    }
+    .Home p{
+        font-size: 130%;
+        color: #FFFDD0;
+        position: relative;
+        top: 15%;
+        text-align: left;
+        background-color: rgba(162, 72, 87, 0.7);
+    }
+    .content{
+        display: flex;
+        height: 50%;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .content .text{
+        color: #454545;
+        position: relative;
+        font-size: 100%;
+        top: 20%;
+        width 50%;
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    .content .text h1{
+        font-size: 170%;
+    }
+
+    .content .text h1 span{
+        color: #9b533f;
+        font-size: 100%;
+    }
+
+    .content .image{
+        margin: 10% 10% 20% 0;
+        width: 40%;
+        float: right;
+        margin-left: 2%;
+    }
+
+    .content1{
+        background-image: url('Images/about.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50%;
+        color: white;
+    }
+    .content1 p{
+        padding-top: 4%;
+        font-size: 18px;
+        background-color: rgba(255, 255, 00, 0.5);
+    }
+    .content2{
+        background-color: #e0c9bf;
+        height: 50%;
+        color: #454545;
+    }
+    .content2 .image{
+        padding-top: 5%;
+    }
+    .content2 h1{
+        color: #454545;
+        font-size: 300%;
+    }
+    .content2 .bullet{
+        text-align: left;
+        font-size: 150%;
+        margin-left: 3%;
+        padding-left: 1.2em;
+    }
+
+    .content2 .bullet::before {
+        content: "\2022";
+        position: absolute;
+        margin-left: -1.2em;
+    }
+    .content2 p{
+        text-align: left;
+        font-family: '';
+        margin-left: 3%;
+        margin-right: 2%;
+        font-size: 110%;
+    }

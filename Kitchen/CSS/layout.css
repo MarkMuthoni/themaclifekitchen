@@ -1,0 +1,56 @@
+/* Reset box-sizing property fo all elements */
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/* body styling */
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+/* Styling for the Main */
+main{
+    height: 100%;
+    color: #00264d;
+    text-align: center;
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* Styling for the flashes */
+.flashes{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* Styling for the individual flashed messages */
+.flash {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(204, 153, 102);
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 10, 0.3);
+}
+
+/* Styling for the footer */
+footer {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #C4A484;
+    font-family: 'Futura', sans-serif;
+    color: white;
+}
